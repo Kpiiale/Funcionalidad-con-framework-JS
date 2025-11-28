@@ -1,3 +1,4 @@
+import ProductTable from "@/components/ProductTable"
 import Image from 'next/image';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
   width={500}
   height={500}
 />
+<ProductTable />
  </main>
  );
 }
