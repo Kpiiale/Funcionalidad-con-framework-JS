@@ -7,6 +7,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
   }
   return NextResponse.next();
 }
+
 export const config = {
-  matcher: ["/", "/((?!api/|_next/|-/|favicon.ico|sc_logo.svg).*)"],
+  matcher: ["/", "/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
